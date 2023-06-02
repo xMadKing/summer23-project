@@ -1,7 +1,12 @@
+/*Body and midview */
+
 body{
     background-color: rgb(27, 15, 50);
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -10,36 +15,23 @@ header.midview{
     color: antiquewhite;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 0px 0px 10px black;
+    text-transform: uppercase;
     padding: 200px 50px 200px 50px;
     background-size: 100%;
     background-image: url("images/background.jpg");
     background-position: center;
 }
 
-section{
-    background-color: blueviolet;
-    padding: 2cm;
-    display: flex;
-    flex-direction: row-reverse;
-}
+/* NAV BAR */
 
-div{
-    background-color: red;
-    width: 100px;
-    margin: auto;
-}
-
-footer{
-    background-color: black;
-    padding: 10px;
-}
-ul{
+.navheader ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-li{
+
+.navheader li{
     display: inline-block;
     margin-right: 20px;
 }
@@ -61,7 +53,7 @@ header.navheader a:hover {
 
 header.navheader {
     padding: 10px 5px 10px 5px;
-    background-color: rgb(27, 15, 50);
+    background-color: black;
 }
 
 header.navheader .logo a {
@@ -74,4 +66,36 @@ header.navheader .logo a {
     width: 25px;
     top: -2px;
     position: relative;
+}
+
+/*FOOTER*/
+
+.links figure {
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.links figure img {
+    background-color: white;
+    color: antiquewhite;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px;
+    width: 50px;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
