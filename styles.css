@@ -1,14 +1,22 @@
-/*Body and midview */
+/*Body and midview */	
+
+#Matrix {
+    position: absolute;
+}
 
 body{
-    background-color: rgb(27, 15, 50);
+    overflow: hidden;
     color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+header {
+    position: relative;
 }
 
 header.midview{
@@ -19,13 +27,13 @@ header.midview{
     text-transform: uppercase;
     padding: 200px 50px 200px 50px;
     background-size: 100%;
-    background-image: url("images/background.jpg");
     background-position: center;
 }
 
-@media  screen and (max-width:700px) {
-    header.midview {
-        padding: 100px 50px 100px 50px;
+@media screen and (max-width:700px) {
+    #Matrix { /*TODO Fix so it resizes as the webpage size changes */
+        resize: horizontal;
+        resize: vertical;
     }
 }
 
@@ -59,6 +67,7 @@ header.navheader a:hover {
 
 header.navheader {
     padding: 10px 5px 10px 5px;
+    margin-left: 0;
     background-color: black;
 }
 
@@ -71,7 +80,6 @@ header.navheader .logo a {
     text-indent: -999999px;
     width: 25px;
     top: -2px;
-    position: relative;
 }
 
 /*FOOTER*/
@@ -120,5 +128,6 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
