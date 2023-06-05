@@ -1,25 +1,40 @@
-/*Body and midview */	
+/*Body, background and midview, General*/	
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+a:visited {
+    color: pink;
+}
+
+html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 #Matrix {
     position: absolute;
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     color: antiquewhite;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 300vh;
     margin: 0;
     padding: 0;
 }
 
-header {
-    position: relative;
-}
-
 header.midview{
+    position: relative;
     color: antiquewhite;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
@@ -39,10 +54,19 @@ header.midview{
 
 /* NAV BAR */
 
+.navheader {
+    padding: 10px 5px 10px 5px;
+    box-shadow: 0px 0px 20px green;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
 .navheader ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    z-index: 2;
 }
 
 .navheader li{
@@ -50,28 +74,22 @@ header.midview{
     margin-right: 20px;
 }
 
-header.navheader a {
+.navheader a {
     text-decoration: none;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
 }
 
-header.navheader a:visited {
+.navheader a:visited {
     text-decoration: none;
     color: antiquewhite; 
 }
 
-header.navheader a:hover {
+.navheader a:hover {
     color: rgb(0, 106, 255);
 }
 
-header.navheader {
-    padding: 10px 5px 10px 5px;
-    margin-left: 0;
-    background-color: black;
-}
-
-header.navheader .logo a {
+.navheader .logo a {
     background: url("images/logo.png");
     background-size: 25px;
     background-repeat: no-repeat;
@@ -118,6 +136,7 @@ header.navheader .logo a {
 footer {
     background-color: black;
     color: grey;
+    box-shadow: 0px 0px 20px green;
     font-size: 16px;
     font-weight: bolder;
     font-style: italic;

@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.contacts {
+    position: relative;
+    margin-top: 47%;
+}
+
+.contacts div{
+    font-size: 40px;
+    font-weight: bolder;
+}

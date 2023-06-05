@@ -1,45 +1,124 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Ahmad's Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./pages/experience.css">
+        <link rel="stylesheet" href="./pages/contacts.css">
     </head>
+
     <body>
+
         <canvas id="Matrix"></canvas>
-        <header class="navheader">
+
+        <header class="navheader sticky">
             <nav>
                 <ul>
                     <li class="logo"><a href="index.html"><strong>Logo</strong></a></li>
-                    <li><a href="index.html"><strong>Portfolio</strong></a></li>
-                    <li><a href="pages/experience.html"><strong>Experience</strong></a></li>
-                    <li><a href="pages/contacts.html"><strong>Contacts</strong></a></li>
+                    <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+                    <li><a href="#exper"><strong>Experience</strong></a></li>
+                    <li><a href="#contacts"><strong>Contacts</strong></a></li>
                 </ul>
             </nav>
         </header>
-        <header class="midview">
+
+        <header class="midview" id="portfolio">
             <strong>Hi!</strong> I am  <em>xMadKing</em>
             <br> I am currently a student at <strong>BTH!</strong> 
         </header>
-        <footer class="links">
+
+        <section class="experiences" id="exper">
+            <ul>
+                <div class="skills">
+                    <br>
+                    Education
+                    <ul>
+                        <p><strong>Multilingual:</strong> Fluent in English, Fluent in Arabic, Fluent in Swedish.</p>
+                        <p><strong>Cirtified forklift operator</strong></p>
+                        <p><strong>M. Sc. Software Engineering</strong> @ <em>Blekinge Tekniska Högskola</em> 
+                            Courses include: 
+                            <ul>
+                                <p>Project Managment</p>
+                                <p>Object oriented Design</p>
+                                <p>Multiprocessor programming</p>
+                                <p>Database managment systems (MySQL)</p>
+                                <p>Courses in Python & C++</p>
+                                <p>Many more...</p>
+                            </ul>
+                            <p>Projected graduation year: 2025.</p>
+                        </p>
+                        <p><strong>Technical base year</strong> @ <em>Högskolan i Borås</em>. Duration: 2019-2020</p>
+                        <p><strong>Industial-Engineering program</strong>, Machine-learning oriented. @ <em>WasaSkolan, Tingsryd</em>.
+                            Duration: 2016-1019</p>
+                    </ul>
+                </div>
+                <div class="proglang" id="proglang">
+                    Programming languages
+                    <ul class="list">
+                        <p><em><strong>C++ & C</strong></em> attended C++ course and have worked with it on multiple projects.</p>
+                        <p><em><strong>Python</strong></em> attended a Python course and have worked with it.</p>
+                        <p><em><strong>MySQL</strong></em> attended a course in Databases and worked closely with MySQL queries.</p>
+                        <p><em><strong>HTML & CSS</strong></em> self taught basics of HTML and CSS.</p>
+                        <p><em><strong>JavaScript</strong></em> self taught basics of JavaScript.</p>
+                    </ul>
+                </div>
+                <div class="workexp">
+                    Work experience
+                </div>
+            </ul>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <ul>
+                <div class="Discord">
+                    <br>
+                    Discord
+                    <p>
+                        You can contact me through my discord @ <em>xMadKing#6969</em>
+                    </p>
+                </div>
+                <div class="email" id="email">
+                    Email
+                    <p>
+                        You can reach me through email by contacting <em>ahmad.kh.se@outlook.com</em>
+                    </p>
+                </div>
+                <div class="Othercontacts">
+                    Other contact methods
+                    <p>
+                        Other ways of contacting me are via Twitter and/or LinkedIn which you can 
+                        find the link to in the page <a href="#footer">footer</a>.
+                    </p>
+                </div>
+            </ul>
+        </section>
+
+        <footer class="links" id="footer">
+
             <figure>
                 <a href="https://github.com/xmadking">
                     <img src="images/githublogo.png" alt="github link"/>
                     <figcaption>GitHub</figcaption>
                 </a>
             </figure>
+
             <figure>
                 <a href="https://twitter.com/xMadking_">
                     <img src="images/twitterlogo.png" alt="twitter link"/>
                     <figcaption>Twitter</figcaption>
                 </a>
             </figure>
+
             <figure>
                 <a href="https://www.linkedin.com/in/ahmad-kh-se/">
                     <img src="images/linkedinlogo.png" alt="linkedIn link"/>
                     <figcaption>LinkedIn</figcaption>
                 </a>
             </figure>
+
         </footer>
+
         <script src="backgroundscript.js"></script>
     </body>
 </html>

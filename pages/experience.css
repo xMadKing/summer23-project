@@ -1,0 +1,32 @@
+.experiences{
+    margin-top: 25%;
+    position: relative;
+}
+
+.experiences div.skills{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.experiences div.proglang{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.experiences div.workexp{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.list {
+    list-style-type: circle;
+}
+
+p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -2,7 +2,7 @@ const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight*3;
 
 const numbers = '0123456789';
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*(){}/'
@@ -24,7 +24,6 @@ const draw = () => {
 
     const colors = ['#00b33a', '#0F0', '#00bc4a', '#00c063', '#006847']
     const font = ['Courier New', 'Courier', 'monospace', 'Impact', 'Ariel']
-
 
     context.fillStyle = colors[parseInt(Math.random()*colors.length)];
     context.font = font_size + 'px ' + font[parseInt(Math.random()*font.length)]; 
