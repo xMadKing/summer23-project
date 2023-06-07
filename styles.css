@@ -28,7 +28,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-    min-height: 300vh;
+    min-height: 500vh;
     margin: 0;
     padding: 0;
 }
@@ -36,11 +36,13 @@ body{
 header.midview{
     position: relative;
     color: antiquewhite;
-    font-size: 25px;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0px 0px 10px black;
     text-transform: uppercase;
-    padding: 200px 50px 200px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
     background-size: 100%;
     background-position: center;
 }
@@ -98,6 +100,27 @@ header.midview{
     text-indent: -999999px;
     width: 25px;
     top: -2px;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    background-image: url(images/banner.png);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    filter: drop-shadow(0px 0px 20px green);
+}
+
+.banner p {
+    padding: 100px 0px 0px 400px;
+    font-size: 30px;
+}
+
+.banner li {
+    padding: 0px 0px 0px 400px;
+    list-style-type: none;
+    font-size: 24px;
 }
 
 /*FOOTER*/

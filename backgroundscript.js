@@ -2,7 +2,7 @@ const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight*3;
+canvas.height = window.innerHeight*5;
 
 const numbers = '0123456789';
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*(){}/'
